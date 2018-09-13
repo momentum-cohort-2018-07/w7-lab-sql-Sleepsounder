@@ -26,9 +26,22 @@ d The specific result returned (if a single record is returned)
 
 
 3a Find the number of projects for each client.
- b
- c
- d
+
+ b SELECT COUNT(client_id)
+   FROM projects
+   GROUP BY client_id;
+
+ c 9 rows returned in 0ms
+
+ d "3"
+   "3"
+   "3"
+   "3"
+   "6"
+   "3"
+   "3"
+   "3"
+   "3"
 
 4a Find all time entries, and show each one's client name next to it.
  b
