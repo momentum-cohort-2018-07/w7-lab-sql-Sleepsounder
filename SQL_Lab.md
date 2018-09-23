@@ -48,7 +48,9 @@ d The specific result returned (if a single record is returned)
    FROM time_entries 
    INNER JOIN projects on time_entries.project_id = projects.id 
    INNER JOIN clients on clients.id = projects.client_id;
+ 
  c 500
+ 
  d (500 names)
 
 
